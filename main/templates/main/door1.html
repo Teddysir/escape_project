@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{% static 'main/js/door1.js' %}"></script>
+
+    <title>Door 1</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url("{% static 'main/images/back1.png' %}") no-repeat center center fixed; /* 벽지 배경 */
+            background-size: cover; /* 화면 크기에 맞게 배경 조정 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .door-container {
+            position: relative;
+        }
+        .door {
+            width: 200px; /* 문 크기 조정 */
+            cursor: pointer;
+        }
+        .door:hover {
+            transform: scale(1.05); /* 문 확대 */
+        }
+    </style>
+</head>
+<body>
+    <div class="door-container">
+        <img
+            class="door"
+            src="{% static 'main/images/door1.png' %}"
+            alt="Door"
+            data-main-url="{% url 'main' %}" 
+        >
+    </div>
+
+    <script src="{% static 'main/js/door1.js' %}"></script>
+</body>
+</html>

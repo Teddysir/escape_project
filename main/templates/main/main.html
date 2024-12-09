@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simsimhow - Main</title>
+    <link rel="stylesheet" href="{% static 'main/main.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 상단 네비게이션 바 -->
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="{% static 'main/images/simsimhow.png' %}" alt="Simsimhow">
+            <span class="logo-text">SIMSIMHOW</span>
+        </div>
+        <nav>
+            <a href="{% url 'activate' %}">활동 인증 게시판</a>
+        </nav>
+    </header>
+
+    <!-- 열쇠 이미지 -->
+    <div class="key-container">
+        <img id="key" src="{% static 'main/images/key.jpeg' %}" alt="Key">
+    </div>
+
+    <div class="doors">
+        <div class="door" data-url="{% url 'door1' %}">
+            <img class="door-img" src="{% static 'main/images/door1.png' %}" alt="Door 1">
+        </div>
+        <div class="door" data-url="{% url 'door2' %}">
+            <img class="door-img" src="{% static 'main/images/door1.png' %}" alt="Door 2">
+        </div>
+        <div class="door" data-url="{% url 'door3' %}">
+            <img class="door-img" src="{% static 'main/images/door1.png' %}" alt="Door 3">
+        </div>
+    </div>
+    <div class="key-container">
+        <img id="key" src="{% static 'main/images/key.jpeg' %}" alt="Key">
+    </div>
+
+    <div class="alert-message" id="alert">열쇠가 필요합니다!</div>
+
+    <script src="{% static 'main/js/main.js' %}"></script>
+</body>
+</html>

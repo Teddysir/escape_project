@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>활동 인증 게시판</title>
+    <link rel="stylesheet" href="{% static 'main/activate.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 상단 네비게이션 바 -->
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="{% static 'main/images/simsimhow.png' %}" alt="Simsimhow">
+            <span class="logo-text">SIMSIMHOW</span>
+        </div>
+        <nav>
+            <a href="/main">메인으로 가기</a>
+        </nav>
+    </header>
+
+    <!-- 게시판 콘텐츠 -->
+    <div class="board-container">
+        <div class="board-header">
+            <h1>활동 인증 게시판</h1>
+            <button class="create-post-btn">활동 인증 게시물 생성하기</button>
+        </div>
+        <table class="board-table">
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>작성자</th>
+                    <th>작성일</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>첫 번째 활동 인증</td>
+                    <td>사용자1</td>
+                    <td>2024-11-17</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>두 번째 활동 인증</td>
+                    <td>사용자2</td>
+                    <td>2024-11-17</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

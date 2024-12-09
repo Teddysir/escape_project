@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.escape-room {
+    text-align: center;
+    position: relative;
+}
+
+.hidden-button {
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    opacity: 0;
+    width: 100px;
+    height: 50px;
+    background: #00ff00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hidden-button:hover {
+    opacity: 1;
+}

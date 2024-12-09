@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simsimhow - Mouse</title>
+    <link rel="stylesheet" href="{% static 'main/mouse.css' %}">
+</head>
+<body>
+    <div class="dark-screen">
+        <button class="main-button" onclick="window.location.href='/main'">Good! Go To Main</button>
+        <div id="light-effect"></div>
+    </div>
+    <script src="{% static 'main/js/mouse.js' %}"></script>
+</body>
+</html>
