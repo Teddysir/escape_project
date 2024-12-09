@@ -17,6 +17,13 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            flex-direction: column; /* 문구와 문을 수직 정렬 */
+        }
+        .alert-message {
+            color: red;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 20px; /* 문과의 간격 */
         }
         .door-container {
             position: relative;
@@ -31,6 +38,11 @@
     </style>
 </head>
 <body>
+    <!-- 문제 알림 메시지 -->
+    <div class="alert-message">
+        두번째 문 클릭시 solved를 붙여서 정답을 입력해주세요.
+    </div>
+
     <div class="door-container">
         <img
             class="door"

@@ -20,27 +20,41 @@
         </nav>
     </header>
 
-    <!-- 열쇠 이미지 -->
-    <div class="key-container">
-        <img id="key" src="{% static 'main/images/key.jpeg' %}" alt="Key">
-    </div>
-
     <div class="doors">
-        <div class="door" data-url="{% url 'door1' %}">
+        <div class="door" id="door1" data-url="{% url 'door1' %}">
             <img class="door-img" src="{% static 'main/images/door1.png' %}" alt="Door 1">
         </div>
-        <div class="door" data-url="{% url 'door2' %}">
+        <div class="door" id="door2" data-url="{% url 'door2' %}">
             <img class="door-img" src="{% static 'main/images/door1.png' %}" alt="Door 2">
         </div>
-        <div class="door" data-url="{% url 'door3' %}">
+        <div class="door" id="door3" data-url="{% url 'door3' %}">
             <img class="door-img" src="{% static 'main/images/door1.png' %}" alt="Door 3">
         </div>
-    </div>
-    <div class="key-container">
-        <img id="key" src="{% static 'main/images/key.jpeg' %}" alt="Key">
+        
     </div>
 
-    <div class="alert-message" id="alert">열쇠가 필요합니다!</div>
+    <!-- 첫 번째 입력 박스 -->
+    <div class="input-container" id="input-container1" style="display: none;">
+        <p id="question1">문제: 4바이트는 몇 비트일까?</p>
+        <input type="text" id="answer1" placeholder="정답을 입력하세요">
+        <button id="submit-answer1">제출</button>
+        <p id="feedback1" style="display: none; color: red;"></p>
+    </div>
+
+    <!-- 두 번째 입력 박스 -->
+    <div class="input-container" id="input-container2" style="display: none;">
+        <p id="question2">문제: 주강사님의 이름은?</p>
+        <input type="text" id="answer2" placeholder="정답을 입력하세요">
+        <button id="submit-answer2">제출</button>
+        <p id="feedback2" style="display: none; color: red;"></p>
+    </div>
+
+    <div class="input-container" id="input-container3" style="display: none;">
+        <p id="question3">문제: 파이썬 기반 웹 프레임워크는?</p>
+        <input type="text" id="answer3" placeholder="정답을 입력하세요">
+        <button id="submit-answer3">제출</button>
+        <p id="feedback3" style="display: none; color: red;"></p>
+    </div>
 
     <script src="{% static 'main/js/main.js' %}"></script>
 </body>

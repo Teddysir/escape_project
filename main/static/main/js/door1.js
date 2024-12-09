@@ -18,4 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const mainUrl = door.getAttribute("data-main-url"); // HTML 속성에서 URL 가져오기
         window.location.href = mainUrl; // 메인 페이지로 이동
     });
+
+    
 });

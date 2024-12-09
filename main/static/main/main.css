@@ -177,41 +177,27 @@ body {
     transform: scale(1.05); /* 호버 시 살짝 확대 */
 }
 
-/* 알림 메시지 */
-.alert-message {
-    display: none; /* 기본적으로 숨김 */
-    text-align: center;
+.input-container {
     margin-top: 20px;
-    color: red;
-    font-size: 18px;
+    text-align: center;
 }
 
-.key-container {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    opacity: 0; /* 기본적으로 숨김 */
-    transition: opacity 0.5s ease-in-out; /* 서서히 나타나는 효과 */
-    z-index: 1000;
+.input-container input {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    margin-right: 10px;
 }
 
-/* .key-container img {
-    width: 30px; 
-    height: auto;
+.input-container button {
+    padding: 10px 20px;
+    font-size: 16px;
     cursor: pointer;
-} */
-
-.key-container:hover {
-    opacity: 1; /* 마우스 오버 시 나타남 */
 }
 
-
-/* 알림 메시지 */
-.alert-message {
-    display: none; /* 기본적으로 숨김 */
-    text-align: center;
-    margin-top: 20px;
-    color: red;
-    font-size: 18px;
+.input-container p {
+    margin-top: 10px;
+    font-size: 16px;
 }
+
 
