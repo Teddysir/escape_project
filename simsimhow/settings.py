@@ -26,8 +26,7 @@ SECRET_KEY = 'django-insecure-g+u^*w#k1fqhxaank207-9^g64l1b-f9qes9t!yxui@yfx-08f
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['15.168.234.219', 'simsimhow.shop','127.0.0.1:8000', '127.0.0.1']
 
 # Application definition
 
@@ -124,11 +123,12 @@ USE_TZ = True
 
 # STATIC_URL 설정
 STATIC_URL = '/static/'
-
-# 앱 별 정적 파일 관리
 STATICFILES_DIRS = [
-    BASE_DIR / 'static',
+    os.path.join(BASE_DIR, 'static'),  # 프로젝트 내 정적 파일 경로
 ]
+
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 

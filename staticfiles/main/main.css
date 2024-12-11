@@ -1,0 +1,203 @@
+/* 전체 스타일 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo 2', cursive;
+    color: #ddd; /* 기본 텍스트 색상 */
+    background-color: #1a1a2e; /* 어두운 배경색 */
+}
+
+/* 상단 네비게이션 바 */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #16213e; /* 어두운 네비게이션 바 */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* 로고와 텍스트를 포함한 컨테이너 */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* 로고와 텍스트 간 간격 */
+}
+
+.logo img {
+    max-width: 150px; /* 로고 크기 */
+    height: auto;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    line-height: 1;
+}
+
+
+/* 네비게이션 스타일 */
+.navbar nav {
+    display: flex;
+    gap: 30px; /* 링크 간격 */
+}
+
+.navbar nav a {
+    color: #ddd; /* 텍스트 색상 */
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar nav a:hover {
+    color: #8e44ad; /* 보랏빛 강조 */
+}
+
+/* 메인 콘텐츠 */
+.main-content {
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+}
+
+.main-content h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ddd;
+}
+
+/* 수준별 체험 버튼 섹션 */
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.star {
+    padding: 15px 30px;
+    background: #2e0249; /* 버튼 배경색 */
+    color: white; /* 텍스트 색상 */
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.star:hover {
+    transform: scale(1.1);
+    background: #5a3f6b; /* 호버 시 강조 색상 */
+}
+
+/* 배너 슬라이더 스타일 */
+.banner-slider {
+    position: relative;
+    width: 100%; /* 화면 좌우 꽉 채우기 */
+    height: 300px; /* 고정 높이 */
+    overflow: hidden;
+    margin-bottom: 50px; /* 메인 콘텐츠와 간격 */
+}
+
+.banner-slider .slides {
+    display: flex;
+    width: 100%; /* 슬라이드 컨테이너 넓이 */
+    transition: transform 0.5s ease-in-out;
+}
+
+.banner-slider .slide {
+    min-width: 100%; /* 슬라이드 하나의 너비 */
+    height: 100%; /* 슬라이드 높이 */
+}
+
+.banner-slider .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지 */
+}
+
+/* 화살표 버튼 스타일 */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.arrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+
+
+/* 문 이미지 섹션 */
+.doors {
+    display: flex;
+    justify-content: center; /* 문을 가로로 중앙 정렬 */
+    gap: 100px; /* 문 사이 간격 */
+    margin-top: 120px; /* 상단 여백 */
+    position: relative;
+}
+
+/* 문 이미지 */
+.door img {
+    width: 150px; /* 문 이미지 크기 */
+    height: auto; /* 비율 유지 */
+    border-radius: 10px; /* 둥근 모서리 */
+    transition: transform 0.3s ease; /* 호버 시 애니메이션 */
+}
+
+.door img:hover {
+    transform: scale(1.05); /* 호버 시 살짝 확대 */
+}
+
+.input-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.input-container input {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.input-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.input-container p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+

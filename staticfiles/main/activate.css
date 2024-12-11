@@ -1,0 +1,230 @@
+/* 전체 스타일 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo 2', cursive;
+    color: #ddd; /* 기본 텍스트 색상 */
+    background-color: #1a1a2e; /* 어두운 배경색 */
+}
+
+/* 상단 네비게이션 바 */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #16213e; /* 어두운 네비게이션 바 */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    line-height: 1;
+}
+
+.navbar nav a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar nav a:hover {
+    color: #8e44ad;
+}
+
+/* 게시판 컨테이너 */
+.board-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #16213e;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.board-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.board-header h1 {
+    font-size: 32px;
+    color: #ddd;
+}
+
+.create-post-btn {
+    padding: 10px 20px;
+    background: #2e0249;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.create-post-btn:hover {
+    transform: scale(1.1);
+    background: #5a3f6b;
+}
+
+/* 게시판 테이블 */
+.board-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.board-table th, .board-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    color: white;
+}
+
+.board-table th {
+    background: #2e0249;
+    color: white;
+}
+
+.board-table tr:nth-child(even) {
+    background: #1a1a2e;
+}
+
+.board-table tr:nth-child(odd) {
+    background: #2e0249;
+}
+
+.board-table tr:hover {
+    background: #5a3f6b;
+}
+
+
+
+
+
+
+
+/* 게시물 생성 폼 스타일 */
+.create-post-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #16213e;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: #ddd;
+}
+
+.create-post-container h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+
+.create-post-container .form-group {
+    margin-bottom: 20px;
+}
+
+.create-post-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.create-post-container input,
+.create-post-container textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #1a1a2e;
+    color: #ddd;
+}
+
+.create-post-container input:focus,
+.create-post-container textarea:focus {
+    outline: none;
+    border-color: #8e44ad;
+}
+
+.create-post-container .create-post-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background: #2e0249;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.create-post-container .create-post-btn:hover {
+    transform: scale(1.05);
+    background: #5a3f6b;
+}
+
+
+
+
+
+/* 게시물 상세 페이지 스타일 */
+.post-detail-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #16213e;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: #ddd;
+}
+
+.post-detail-container h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+}
+
+.post-detail-container .post-meta {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+.post-detail-container .post-image {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.post-detail-container .post-content {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ddd;
+    text-align: justify;
+}
